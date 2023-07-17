@@ -27,6 +27,7 @@ router.post("/", async (req, res) => {
     res.redirect(output);
 
 
+    
     // return res.redirect(`/home?pic=${output}`);
    
   });
