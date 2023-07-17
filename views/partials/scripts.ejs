@@ -3,3 +3,26 @@
   integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
   crossorigin="anonymous"
 ></script>
+<script>
+function validateImageSize(input) {
+ // Get the file size of the image.
+ var fileSize = input.files[0].size;
+  // Check if the file size is less than 1 MB.
+  if (fileSize > 1048576) {
+    // Show an error message.
+    alert("The image file must be less than 1 MB.");
+
+    // Clear the input field.
+    input.value = "";
+  } else {
+    // Show the preview of the image.
+    var preview = document.getElementById("preview");
+    var reader = new FileReader();
+    reader.onload = function() {
+      preview.innerHTML = '<img src="' + reader.result + '" />';
+    };
+    reader.readAsDataURL(input.files[0]);
+  }
+}
+
+</script>

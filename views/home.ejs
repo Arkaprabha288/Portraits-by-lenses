@@ -22,7 +22,15 @@
         <% }) %>
       </div>
     </div>
+    <div class="container mt-3">
+      <form action="/image/enhance" method="post" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*" onchange="validateImageSize(this)">
 
+        <div id="preview"></div>
+        <button type="submit">Submit</button>
+      </form>
+      
+    </div>
     <%- include('./partials/scripts') %>
   </body>
 </html>
