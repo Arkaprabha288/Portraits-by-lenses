@@ -34,7 +34,7 @@ app.use(express.static(path.resolve("./public")));
 app.use(fileupload());
 app.get("/", async (req, res) => {
   const allBlogs = await Blog.find({});
-  res.render("home", {
+  res.render("index", {
     user: req.user,
     blogs: allBlogs,
   });

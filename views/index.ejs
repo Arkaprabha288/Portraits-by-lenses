@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<!--
+ // WEBSITE: https://themefisher.com
+ // TWITTER: https://twitter.com/themefisher
+ // FACEBOOK: https://www.facebook.com/themefisher
+ // GITHUB: https://github.com/themefisher/
+-->
+
+<html lang="en">
+    <%- include('./partials_view/head') %>
+    <body id="home" data-spy="scroll" data-target=".navbar-nav" data-offset="80">
+        
+        <%- include('./partials_view/preloader') %>
+        
+        <!--
+        Welcome Slider
+        ==================================== -->
+
+        <section class="hero-area overlay" style="background-image: url('images/banner/banner_hero_area.jpg');">
+            <!-- <video autoplay muted loop class="hero-video">
+            <source src="images/banner/hero-video.mp4" type="video/mp4">
+        </video> -->
+            <div class="block">
+                <div class="video-button mb-5">
+                    <!-- <a class="popup-video" href="https://www.youtube.com/watch?v=jrkvirglgaQ"> -->
+                    <a class="popup-video" href="#">
+                        <i class="tf-ion-play"></i>
+                    </a>
+                </div>
+                <h1>Experience the new reality</h1>
+                <p>Portraits by Lenses is a photography website dedicated to capturing the beauty of people in their natural state. Whether you're a friend, family member,
+                     or a random stranger, I'm passionate about capturing your unique personality and story through photography.</p>
+                <a href="#services" class="btn btn-transparent smooth-scroll">Explore Us</a>
+            </div>
+        </section>
+        <%- include('./partials_view/header') %>
+        <%- include('./partials_view/services') %>
+        <%- include('./partials_view/footer') %>
+        <%- include('./partials_view/scripts') %>
+
+    </body>
+</html>
